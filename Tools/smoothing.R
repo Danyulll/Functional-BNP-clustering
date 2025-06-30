@@ -44,7 +44,7 @@ smoothing <- function(X,
   # plot smoothed data
   basis.t <- t(eval.basis(time.grid, basis))
   X_smooth <- beta %*% basis.t
-  matplot(time.grid, t(X_smooth), type='l')
+  
   
   
   return(list('X' = X,
